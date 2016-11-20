@@ -8,9 +8,9 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/css/theme/mozilla-poly.css" id="theme">
-        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/lib/css/zenburn.css">
+        <link rel="stylesheet" href="https://github.mozilla-tunisia.org/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="https://github.mozilla-tunisia.org/reveal.js/css/theme/mozilla-poly.css" id="theme">
+        <link rel="stylesheet" href="https://github.mozilla-tunisia.org/reveal.js/lib/css/zenburn.css">
         <link rel="stylesheet" href="../css/console.css" id="theme">
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/4.0.0/i18next.min.js"></script>
@@ -19,7 +19,7 @@
             var link = document.createElement('link');
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = window.location.search.match(/print-pdf/gi) ? 'http://github.mozilla-tunisia.org/reveal.js/css/print/pdf.css' : 'http://github.mozilla-tunisia.org/reveal.js/css/print/paper.css';
+            link.href = window.location.search.match(/print-pdf/gi) ? 'https://github.mozilla-tunisia.org/reveal.js/css/print/pdf.css' : 'https://github.mozilla-tunisia.org/reveal.js/css/print/paper.css';
             document.getElementsByTagName('head')[0].appendChild(link);
         </script>
     </head>
@@ -248,8 +248,8 @@ fn main() {
             </div>
         </div>
 
-        <script src="http://github.mozilla-tunisia.org/reveal.js/lib/js/head.min.js"></script>
-        <script src="http://github.mozilla-tunisia.org/reveal.js/js/reveal.js"></script>
+        <script src="https://github.mozilla-tunisia.org/reveal.js/lib/js/head.min.js"></script>
+        <script src="https://github.mozilla-tunisia.org/reveal.js/js/reveal.js"></script>
 
         <script>
             Reveal.initialize({
@@ -260,17 +260,17 @@ fn main() {
               transition: 'slide',
               dependencies: [
                 { src: '../js/remote-code.js' },
-                {src: 'http://github.mozilla-tunisia.org/reveal.js/lib/js/classList.js', condition: function () {
+                {src: 'https://github.mozilla-tunisia.org/reveal.js/lib/js/classList.js', condition: function () {
                     return !document.body.classList;
                   }},
-                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
+                {src: 'https://github.mozilla-tunisia.org/reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
                     return !!document.querySelector('pre code');
                   }, callback: function () {
                     hljs.initHighlightingOnLoad();
                     fetchAllCode();
                   }},
-                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/zoom-js/zoom.js', async: true},
-                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/notes/notes.js', async: true}
+                {src: 'https://github.mozilla-tunisia.org/reveal.js/plugin/zoom-js/zoom.js', async: true},
+                {src: 'https://github.mozilla-tunisia.org/reveal.js/plugin/notes/notes.js', async: true}
               ]
             });
             Reveal.addEventListener('fragmentshown', function( event ) {
