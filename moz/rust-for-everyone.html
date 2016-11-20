@@ -8,22 +8,23 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-        <link rel="stylesheet" href="../components/moz-reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="../components/moz-reveal.js/css/theme/mozilla-poly.css" id="theme">
-        <link rel="stylesheet" href="../components/moz-reveal.js/lib/css/zenburn.css">
+        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/css/theme/mozilla-poly.css" id="theme">
+        <link rel="stylesheet" href="http://github.mozilla-tunisia.org/reveal.js/lib/css/zenburn.css">
         <link rel="stylesheet" href="../css/console.css" id="theme">
-        <script src="../components/jquery/dist/jquery.min.js"></script>
-        <script src="../components/i18next/i18next.min.js"></script>
-        <script src="../components/d3/d3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/4.0.0/i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
         <script>
             var link = document.createElement('link');
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = window.location.search.match(/print-pdf/gi) ? '../components/moz-reveal.js/css/print/pdf.css' : '../components/moz-reveal.js/css/print/paper.css';
+            link.href = window.location.search.match(/print-pdf/gi) ? 'http://github.mozilla-tunisia.org/reveal.js/css/print/pdf.css' : 'http://github.mozilla-tunisia.org/reveal.js/css/print/paper.css';
             document.getElementsByTagName('head')[0].appendChild(link);
         </script>
     </head>
     <body>
+        <a href="https://github.com/bashz/slides"><img style="position: absolute; z-index :9999; top: 0px; right: 0px; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
         <audio src="audio/stomp.ogg" id="sfxStomp"></audio>
         <div class="outer">
             <a href="https://www.mozilla.org/">Mozilla</a>
@@ -247,8 +248,8 @@ fn main() {
             </div>
         </div>
 
-        <script src="../components/moz-reveal.js/lib/js/head.min.js"></script>
-        <script src="../components/moz-reveal.js/js/reveal.js"></script>
+        <script src="http://github.mozilla-tunisia.org/reveal.js/lib/js/head.min.js"></script>
+        <script src="http://github.mozilla-tunisia.org/reveal.js/js/reveal.js"></script>
 
         <script>
             Reveal.initialize({
@@ -259,17 +260,17 @@ fn main() {
               transition: 'slide',
               dependencies: [
                 { src: '../js/remote-code.js' },
-                {src: '../components/moz-reveal.js/lib/js/classList.js', condition: function () {
+                {src: 'http://github.mozilla-tunisia.org/reveal.js/lib/js/classList.js', condition: function () {
                     return !document.body.classList;
                   }},
-                {src: '../components/moz-reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
+                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
                     return !!document.querySelector('pre code');
                   }, callback: function () {
                     hljs.initHighlightingOnLoad();
                     fetchAllCode();
                   }},
-                {src: '../components/moz-reveal.js/plugin/zoom-js/zoom.js', async: true},
-                {src: '../components/moz-reveal.js/plugin/notes/notes.js', async: true}
+                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/zoom-js/zoom.js', async: true},
+                {src: 'http://github.mozilla-tunisia.org/reveal.js/plugin/notes/notes.js', async: true}
               ]
             });
             Reveal.addEventListener('fragmentshown', function( event ) {
